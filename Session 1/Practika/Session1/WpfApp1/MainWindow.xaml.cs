@@ -24,5 +24,64 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        class Method
+        {
+            public string GetCode()
+            {
+                int[] arr = new int[8];
+                Random rnd = new Random();
+                string Code = "";
+
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = rnd.Next(33, 125);
+                    Code += (char)arr[i];
+                }
+                return Code;
+            }
+            private void Entrance_Click(object sender, RoutedEventArgs e)
+            {
+                
+            }
+            private void Number_TextChanged(object sender, TextChangedEventArgs e)
+            {
+
+            }
+
+            private void Password_TextChanged(object sender, TextChangedEventArgs e)
+            {
+
+            }
+
+            private void Сode_TextChanged(object sender, TextChangedEventArgs e)
+            {
+
+            }
+            private void Button_Click_1(object sender, RoutedEventArgs e)
+
+            {
+
+                Method P = new Method();
+                var code = P.GetCode();
+                MessageBox.Show(code, "Генератор кода");
+
+            }
+
+            private void nomer_KeyUp(object sender, KeyEventArgs e)
+            {
+                if (e.Key == Key.Enter)
+                {
+                    TextBox textBox = e.Source as
+                        TextBox;
+                    if (textBox != null)
+                    {
+                        //parol.IsEnabled =
+                        //IsEnabled;
+                    }
+                }
+            }
+        }
     }
 }
+
+        

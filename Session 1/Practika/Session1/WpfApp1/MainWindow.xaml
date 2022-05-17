@@ -11,12 +11,12 @@
         <Label Content="Номер" HorizontalAlignment="Right" Margin="0,164,463,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24"/>
         <Label Content="Пароль" HorizontalAlignment="Right" Margin="0,234,455,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24" RenderTransformOrigin="0.804,0.487"/>
         <Label Content="Код" HorizontalAlignment="Right" Margin="0,304,488,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24"/>
-        <Button Content="Отмена" HorizontalAlignment="Right" Margin="0,374,380,0" VerticalAlignment="Top" Height="34" Width="99" FontFamily="Times New Roman" FontSize="24"/>
-        <Button Content="Вход" HorizontalAlignment="Right" Margin="0,374,195,0" VerticalAlignment="Top" Height="34" Width="99" FontFamily="Times New Roman" FontSize="24"/>
+        <Button Content="Отмена" HorizontalAlignment="Right" Margin="0,374,380,0" VerticalAlignment="Top" Height="34" Width="99" FontFamily="Times New Roman" FontSize="24" x:Name="Сancellation"/>
+        <Button Content="Вход" HorizontalAlignment="Right" Margin="0,374,195,0" VerticalAlignment="Top" Height="34" Width="99" FontFamily="Times New Roman" FontSize="24" x:Name="Entrance" Click="Entrance_Click"/>
         <Image  Source="/Resoures/Logo THC.jpg" Height="202" VerticalAlignment="Top" Margin="580,0,0,0"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,164,225,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="207" Height="43" FontFamily="Times New Roman" FontSize="24"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,231,225,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="207" Height="43" FontFamily="Times New Roman" FontSize="24"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,299,257,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="175" Height="43" FontFamily="Times New Roman" FontSize="24"/>
+        <TextBox HorizontalAlignment="Right" Margin="0,164,225,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="207" Height="43" FontFamily="Times New Roman" FontSize="24" x:Name="Number" TextChanged="Number_TextChanged"/>
+        <TextBox HorizontalAlignment="Right" Margin="0,231,225,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="207" Height="43" FontFamily="Times New Roman" FontSize="24" x:Name="Password" TextChanged="Password_TextChanged" />
+        <TextBox HorizontalAlignment="Right" Margin="0,299,257,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="175" Height="43" FontFamily="Times New Roman" FontSize="24" x:Name="Сode" TextChanged="Сode_TextChanged"/>
         <Button  HorizontalAlignment="Left" Margin="548,299,0,0" VerticalAlignment="Top" Height="43" Width="57"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
             <Image Source="Resoures/On_authorization_Update.png"/>
         </Button>
