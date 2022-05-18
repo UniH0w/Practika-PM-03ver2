@@ -16,17 +16,16 @@ namespace Session_2
     public partial class Session1Entities : DbContext
     {
         private static Session1Entities _context;
-        public static Session1Entities GetContext()
-        { 
-            if(_context == null)
-            _context = new Session1Entities();
-            return _context;
-        }
         public Session1Entities()
             : base("name=Session1Entities")
         {
         }
-    
+        public static Session1Entities GetContext()
+        {
+            if( _context == null )
+                _context = new Session1Entities();
+            return _context;
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

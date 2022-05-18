@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Session_2"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="930" FontSize="8">
     <Grid>
@@ -13,13 +14,14 @@
         </Grid.ColumnDefinitions>
         <Image Source="/Resources/Logo THC.jpg" Margin="-2,4,1348,381" Grid.ColumnSpan="2" />
         <Image Source="/Resources/The line.png" Margin="122,0,1340,0" Grid.ColumnSpan="2" Height="484" VerticalAlignment="Top" />
+        <Label x:Name="Label_to_Label" Content="Абоненты ТНС" Grid.Column="1" Margin="37,10,1042,0" VerticalAlignment="Top" FontSize="36"/>
 
-        <Button Content="Абоненты" HorizontalAlignment="Center" VerticalAlignment="Top" Height="23" Width="110" RenderTransformOrigin="0.529,0.531" FontSize="14" Margin="0,104,0,0"/>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="110" RenderTransformOrigin="0.529,0.531" FontSize="12" Margin="0,137,0,0">
+        <Button Content="Абоненты" HorizontalAlignment="Center" VerticalAlignment="Top" Height="23" Width="110" RenderTransformOrigin="0.529,0.531" FontSize="14" Margin="0,104,0,0" Click="Button_Click_3"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="110" RenderTransformOrigin="0.529,0.531" FontSize="12" Margin="0,137,0,0" Click="Button_Click_2">
             <TextBlock TextAlignment="Center" Height="47" Width="107" FontSize="14">Управление<LineBreak/> оборудованием</TextBlock>
         </Button>
         <Button Content="Активы" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="110" FontSize="14" Margin="0,188,0,0"/>
-        <Button Content="Биллинг" HorizontalAlignment="Center" VerticalAlignment="Top" Height="21" Width="110" FontSize="14" Margin="0,227,0,0"/>
+        <Button Content="Биллинг" HorizontalAlignment="Center" VerticalAlignment="Top" Height="21" Width="110" FontSize="14" Margin="0,227,0,0" Click="Button_Click_1"/>
         <Button  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,259,0,0">
             <TextBlock TextAlignment="Center" FontSize="14" Width="106">Поддержка<LineBreak/> пользователя</TextBlock>
         </Button>
@@ -38,6 +40,14 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Frame Grid.Column="1" Name="MainFrame" Margin="10,0,554,0" Content=""/>
+        <Frame Grid.Column="1" Name="MainFrame" Margin="10,83,0,10" Content="" HorizontalAlignment="Left" Width="788"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="499,31,0,0" VerticalAlignment="Top" Width="176" Height="23"/>
+        <Button Content="Фото"  Margin="711,6,0,416" FontSize="14" HorizontalAlignment="Left" Width="58" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

@@ -25,5 +25,28 @@ namespace Session_2
             InitializeComponent();
             MainFrame.Navigate(new PageAbonent());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Page1());
+            Label_to_Label.Content = "Биллинг";
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new PageEquipment());
+            Label_to_Label.Content = "Оборудование";
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new PageAbonent());
+            Label_to_Label.Content = "Абоненты ТНС";
+        }
     }
 }

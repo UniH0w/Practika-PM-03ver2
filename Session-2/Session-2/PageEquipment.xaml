@@ -1,0 +1,23 @@
+﻿<Page x:Class="Session_2.PageEquipment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Session_2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageEquipment">
+
+    <Grid Background="White">
+        <DataGrid x:Name="DGridUser" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header ="Hardware_Name" Binding ="{Binding Hardware_Name}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header ="Hardware_Type" Binding ="{Binding Hardware_Type}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header ="Hardware_Series" Binding ="{Binding Hardware_Series}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+    </Grid>
+</Page>
